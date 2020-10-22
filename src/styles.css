@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+/* ---------- */
+/* Collection */
+/* ---------- */
+
+.collection {
+}
+
+.collection__item {
+  margin-top: 50px;
+}
+
+.collection__item:first-child {
+  margin-top: 0;
+}
+
+.colleciton__item__heading {
+}
+
+/* ---- */
+/* Hand */
+/* ---- */
+
+.hand {
+  display: inline-flex;
+  user-select: none;
+}
+
+/* ---- */
+/* Card */
+/* ---- */
+
+.card {
+  height: 100px;
+  width: 65px;
+
+  margin-left: 10px;
+  cursor: grab;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card--dragging {
+  position: absolute;
+  margin: 0;
+}
+
+.card--disabled {
+  background: #fff !important;
+}
+
+@media (min-width: 500px) {
+  .card {
+    height: 200px;
+    width: 130px;
+  }
+}
+
+/* ------ */
+/* Colors */
+/* ------ */
+
+.card--red {
+  background: red;
+}
+.card--green {
+  background: green;
+}
+.card--blue {
+  background: blue;
+}
+.card--orange {
+  background: orange;
+}

@@ -1,0 +1,8 @@
+.cache
+.git
+dist
+node_modules
+.gitignore
+LICENSE
+README.md
+.DS_Store
